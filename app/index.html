@@ -51,7 +51,7 @@
 							</a>
 						</li>
 						<li class="main-nav__item">
-							<a href="javascript:void(0);" class="main-nav__link main-nav__link--accent">
+							<a href="javascript:void(0);" class="trigger main-nav__link main-nav__link--accent" data-iziModal-open="#modal">
 								Заказать звонок
 							</a>
 						</li>
@@ -529,7 +529,7 @@
 								</a>
 							</li>
 							<li class="main-nav__item">
-								<a href="javascript:void(0);" class="main-nav__link main-nav__link--accent">
+								<a href="javascript:void(0);" class="trigger main-nav__link main-nav__link--accent" data-iziModal-open="#modal">
 									Заказать звонок
 								</a>
 							</li>
@@ -542,6 +542,24 @@
 	</div>
 
 </footer>
+
+<!-- Modal structure -->
+<div id="modal" class="" data-iziModal-fullscreen="true"   data-iziModal-icon="icon-home">
+ 	 <div class="modal">
+		 <button data-iziModal-close class="icon-close">x</button>
+		 <h3 class="modal__title">Пробное занятие</h3>
+		 <p class="modal__text">Оставьте свой номер телефона и наш оператор свяжется с вами для согласования даты занятия</p>
+		 <div class="modal__input input">
+			 <input type="text" class="input__number" title="" placeholder="+7(___)___-___-___">
+			 <a href="javascript:void(0);" class="button">
+				 Записаться на пробное занятие
+			 </a>
+		 </div>
+	 </div>
+</div>
+
+<!-- Trigger to open Modal -->
+<!--<a href="https://github.com/dolce/iziModal" class="trigger">Modal</a>-->
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>

@@ -617,6 +617,56 @@ body
 			opacity: 1
 			color: $accent-2
 
+//============== modal window
+
+.modal
+	position: relative
+	max-width: 840px
+	max-height: 540px
+	width: 100%
+	height: 100%
+	min-width: 320px
+	min-height: 320px
+	text-align: center
+	background-color: #fff
+	padding: 20px 15px
+	&__title
+		font-size: 34px
+		+gb-font
+		text-transform: uppercase
+	&__text
+		max-width: 555px
+		margin: 0 auto
+
+.icon-close
+	position: absolute
+	top: 10px
+	right: 10px
+	background-color: #ffffff
+	border: none
+	font-size: 18px
+	+gb-font
+
+.input
+	width: 100%
+	text-align: center
+	&__number
+		max-width: 375px
+		width: 100%
+		display: block
+		+gl-font
+		font-size: 18px
+		margin: 0 auto 20px
+		height: 68px
+		border-radius: 50px
+		border: 1px solid #bababa
+		padding: 0 45px
+		+placeholder
+			+gl-font
+			font-size: 18px
+			letter-spacing: 4px
+			opacity: .34
+
 
 
 

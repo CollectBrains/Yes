@@ -1,5 +1,7 @@
 $(function() {
 
+	$("#modal").iziModal();
+
 	var swiper = new Swiper('.swiper-container', {
 
 		slidesPerView: 1,
@@ -10,6 +12,8 @@ $(function() {
 			hide: false,
 		},
 	});
+
+
 
 	svg4everybody();
 

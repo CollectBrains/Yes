@@ -39,6 +39,9 @@
 	.logo
 		font-size: 30px
 
+	.button
+		font-size: 14px
+
 	.main-nav
 		&__item
 			&:first-child
@@ -105,7 +108,12 @@
 		&__text
 			font-size: 14px
 
+	.title--price
+		&::before
+			display: none
+
 	.price
+		text-align: center
 		&::before
 			top: -8%
 			left: 20%
@@ -184,17 +192,20 @@
 		padding-left: 15px
 		padding-right: 15px
 
-		.main-nav
-			&__item
-				&:first-child
-					display: inline-block
+	.main-nav
+		&__item
+			&:first-child
 				display: inline-block
-			&__link
-				line-height: 80px
-				font-size: 18px
+			display: inline-block
+		&__link
+			line-height: 80px
+			font-size: 18px
 
 	.logo
 		font-size: 48px
+
+	.button
+		font-size: 16px
 
 	.hero-text
 		text-align: left
@@ -271,9 +282,16 @@
 		&__text
 			font-size: 16px
 
+
+	.title--price
+		&::before
+			display: inline-block
+
 	.price
+		text-align: left
 		padding: 0
 		&::before
+			display: inline-block
 			top: 0
 			left: -10%
 			width: 30vw
@@ -307,6 +325,32 @@
 			padding-left: 30px
 			text-align: left
 
+	.slide
+		position: relative
+		width: 100%
+		padding: 0 0 60px
+		height: auto
+		&__image
+			float: left
+			width: 15%
+		&__content
+			float: right
+			width: 85%
+			padding-left: 65px
+		&__title
+			margin-bottom: 15px
+			font-size: 18px
+			+gb-font
+		&__text
+			font-size: 18px
+			max-width: 750px
+			&:last-of-type
+				margin-bottom: 25px
+		&__link
+			font-size: 18px
+			color: $accent-2
+			text-decoration: underline
+
 	.callback
 		text-align: left
 		padding-bottom: 100px
@@ -325,7 +369,6 @@
 		.main-nav__item
 			display: block
 
-
 	.lesson
 		&::before
 			top: -100px
@@ -333,6 +376,26 @@
 		.button
 			font-size: 16px
 
+	.footer-line
+		text-align: left
+		.main-nav
+			text-align: right
+			&__link
+				margin-left: 30px
+		&__wrap-logo
+			float: left
+			width: 20%
+			.logo
+				float: left
+				&__text
+					float: left
+		&__wrap-icons
+			position: relative
+			float: right
+			width: 80%
+			margin-top: 30px
+			.soc
+				float: right
 
 
 /* Medium Devices, Desktops */
