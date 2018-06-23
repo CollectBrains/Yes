@@ -149,7 +149,7 @@ body
 	border-radius: 50px
 	text-transform: none
 	+gb-font
-	letter-spacing: 1px
+
 	text-align: center
 	position: relative
 	color: #ffffff
@@ -210,18 +210,32 @@ body
 		+gl-font
 		display: block
 		padding-top: 100px
+		padding-bottom: 100px
 		font-size: 18px
 		line-height: 1.5
 		margin: auto 0
 	&__image
 		position: relative
 		&--first
+			position: relative
 			img
 				margin-bottom: 30px
+			svg
+				width: 110px
+				height: auto
+				position: absolute
+				bottom: -10px
+				right: 96%
 		&--second
 			.image-number
 				left: auto
 				right: -16px
+			svg
+				position: absolute
+				top: 100%
+				left: 60%
+				width: 40px
+				height: auto
 		&--third
 			.image-number
 				top: 17%
@@ -261,6 +275,12 @@ body
 .provide
 	position: relative
 	padding: 270px 0 70px
+	svg
+		position: absolute
+		width: 110px
+		height: auto
+		top: 100%
+		right: 20%
 	&::before
 		content: ''
 		position: absolute
@@ -289,8 +309,20 @@ body
 		display: none
 
 .teacher
-	padding: 50px 0
-
+	position: relative
+	padding: 100px 0
+	.svg
+		position: absolute
+		width: 40px
+		height: auto
+		right: 92%
+		top: 50%
+	.svg-2
+		position: absolute
+		width: 110px
+		height: auto
+		left: 92%
+		top: 50%
 .teacher-card
 	img
 		margin-bottom: 20px
@@ -308,6 +340,16 @@ body
 
 .title--price
 	margin-bottom: 45px
+	position: relative
+	&::before
+		content: '?'
+		position: absolute
+		font-size: 200px
+		top: 50%
+		right: 0
+		transform: translate(-50%, -50%)
+		line-height: .9
+		opacity: .1
 
 .price-head
 	&__title
@@ -336,7 +378,7 @@ body
 		background-repeat: no-repeat
 		-webkit-background-size: cover
 		background-size: cover
-		background-position: center
+		background-position: 50% 50%
 	&__title
 		font-size: 18px
 		+gb-font
@@ -391,11 +433,89 @@ body
 		line-height: 1.5
 		+gl-font
 
+.practice__wrap--first
+	position: relative
+	&::before
+		content: 'просто'
+		position: absolute
+		+gb-font
+		font-size: 110px
+		opacity: .1
+		top: 50%
+		left: 0
+		transform: translate(0, -50%)
+	.svg
+		position: absolute
+		width: 70px
+		height: auto
+		left: 90%
+		top: 0
+
+.practice__wrap--second
+	position: relative
+	&::before
+		content: 'общение'
+		position: absolute
+		+gb-font
+		font-size: 110px
+		opacity: .1
+		top: 50%
+		right: 0
+		transform: translate(0, -50%)
+	.svg
+		position: absolute
+		width: 30px
+		height: auto
+		right: 80%
+		bottom: 100%
+
+.practice__wrap--third
+	position: relative
+	&::before
+		content: 'практика'
+		position: absolute
+		+gb-font
+		font-size: 110px
+		opacity: .1
+		top: 50%
+		left: 0
+		transform: translate(0, -50%)
+
+.practice__wrap--forth
+	position: relative
+	&::before
+		content: 'повтор'
+		position: absolute
+		+gb-font
+		font-size: 110px
+		opacity: .1
+		top: 50%
+		right: 20%
+		transform: translate(0, -50%)
+	.svg
+		position: absolute
+		width: 80px
+		height: auto
+		left: 90%
+		top: -15%
+
 //================ callback
 
 .callback
 	position: relative
 	padding: 50px 0 100px
+	.svg
+		position: absolute
+		width: 30px
+		height: auto
+		top: 15%
+		left: 70%
+	.svg-2
+		position: absolute
+		width: 70px
+		height: auto
+		top: 10%
+		right: 10%
 
 .slide
 	position: relative

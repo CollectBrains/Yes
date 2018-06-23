@@ -32,7 +32,145 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px)
-	/**/
+	.top-line
+		padding-left: 15px
+		padding-right: 15px
+
+	.logo
+		font-size: 30px
+
+	.main-nav
+		&__item
+			&:first-child
+				display: none
+			display: block
+		&__link
+			line-height: 1
+			font-size: 14px
+
+	.hero-text
+		text-align: center
+		margin-left: 0
+		padding-top: 60vw
+		&__title
+			font-size: 24px
+			&::after
+				left: 50%
+				margin-left: -32px
+			span
+				font-size: 18px
+		&__subtitle
+			font-size: 14px
+
+	.situation
+		text-align: center
+		&__image
+			&--last
+				.image-number
+					top: 100%
+					right: 22%
+
+	.question
+		font-size: 24px
+		&::before
+			font-size: 200px
+		&__text
+			font-size: 14px
+
+	.provide
+		padding: 0
+		text-align: center
+		&__title
+			font-size: 14px
+			padding-left: 0
+		&__text
+			font-size: 14px
+			padding-left: 0
+			max-width: 190px
+			margin: 0 auto 30px
+
+	.title
+		font-size: 24px
+		&::after
+			left: 50%
+			margin-left: -32px
+
+	.teacher-card__text
+		margin-bottom: 40px
+
+	.price-head
+		text-align: center
+		&__title
+			font-size: 24px
+		&__text
+			font-size: 14px
+
+	.price
+		&::before
+			top: -8%
+			left: 20%
+			width: 52vw
+		&__item
+			text-align: center
+		&__title
+			font-size: 14px
+		&__text
+			font-size: 14px
+
+	.practice
+		padding: 0
+		text-align: center
+		&__title
+			padding-left: 0
+		&__text
+			padding-left: 0
+
+	.title--practice
+		font-size: 30px
+
+	.callback
+		text-align: center
+		padding-bottom: 0
+		.svg, .svg-2
+			visibility: hidden
+
+	.slide
+		&__image
+			width: 100%
+			float: none
+			img
+				margin: 0 auto
+		&__content
+			width: 100%
+			float: none
+			text-align: center
+			padding-left: 0
+
+	.lesson
+		&::before
+			top: -300px
+			left: 0
+		.button
+			font-size: 14px
+
+	.footer-line
+		text-align: center
+		.main-nav
+			text-align: center
+			&__link
+				margin-left: 0
+		&__wrap-logo
+			width: 100%
+			float: none
+			.logo
+				float: none
+				&__text
+					float: none
+		&__wrap-icons
+			width: 100%
+			float: none
+			.soc
+				float: none
 
 
 /* Extra Small Devices, Phones */
@@ -42,7 +180,159 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
+	.top-line
+		padding-left: 15px
+		padding-right: 15px
+
+		.main-nav
+			&__item
+				&:first-child
+					display: inline-block
+				display: inline-block
+			&__link
+				line-height: 80px
+				font-size: 18px
+
+	.logo
+		font-size: 48px
+
+	.hero-text
+		text-align: left
+		margin-left: 30px
+		padding-top: 0
+		&__title
+			font-size: 30px
+			&::after
+				left: 0
+				margin-left: 0
+			span
+				font-size: 24px
+		&__subtitle
+			font-size: 16px
+
+	.main-header
+		background-position: 65% -100%
+
+	.question
+		font-size: 30px
+		max-width: 235px
+		&::before
+			font-size: 200px
+
+	.situation
+		text-align: left
+		&__text
+			font-size: 18px
+			padding-bottom: 100px
+		&__image
+			&--third
+				img
+					margin-top: 0
+			&--last
+				margin-top: 30px
+				.image-number
+					top: 20%
+					right: -140px
+
+	.title
+		font-size: 30px
+		&::after
+			left: 0
+			margin-left: 0
+
+	.provide
+		text-align: left
+		padding: 270px 0 70px
+		&__title
+			font-size: 16px
+			padding-left: 20px
+		&__text
+			font-size: 16px
+			max-width: 100%
+			padding-left: 20px
+			margin: 0
+
+	.teacher-card
+		padding-bottom: 30px
+		&__title
+			font-size: 18px
+		&__text
+			font-size: 14px
+			margin-bottom: 0
+
+	.title--price
+		&::before
+			right: 90px
+
+	.price-head
+		text-align: left
+		&__title
+			font-size: 30px
+		&__text
+			font-size: 16px
+
+	.price
+		padding: 0
+		&::before
+			top: 0
+			left: -10%
+			width: 30vw
+			height: 100vw
+			background-position: 76% 50%
+		&__item
+			text-align: left
+		&__title
+			font-size: 16px
+		&__text
+			font-size: 16px
+
+	.practice
+		padding: 100px 0
+		text-align: left
+		&__title
+			font-size: 16px
+			padding-left: 37px
+		&__text
+			font-size: 16px
+			padding-left: 37px
+
+	.title--practice
+		font-size: 30px
+
+	.slide
+		&__image
+			img
+				margin: 0
+		&__content
+			padding-left: 30px
+			text-align: left
+
+	.callback
+		text-align: left
+		padding-bottom: 100px
+		.svg, .svg-2
+			visibility: visible
+
+	.footer-line
+		padding-left: 15px
+		padding-right: 15px
+		.logo
+			font-size: 30px
+		.logo__text
+			font-size: 16px
+		&__wrap-icons
+			margin-top: 0
+		.main-nav__item
+			display: block
+
+
+	.lesson
+		&::before
+			top: -100px
+			left: -110px
+		.button
+			font-size: 16px
+
 
 
 /* Medium Devices, Desktops */
@@ -52,5 +342,101 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
+	.price
+		padding: 150px 0 50px
 
+
+	.top-line
+		padding-left: 15px
+		padding-right: 15px
+
+	.hero-text
+		&__title
+			font-size: 45px
+			span
+				font-size: 38px
+		&__subtitle
+			font-size: 18px
+
+	.main-header
+		background-position: 50% -100%
+
+	.question
+		font-size: 45px
+		max-width: 355px
+		&::before
+			font-size: 300px
+
+	.situation
+		&__text
+			padding-bottom: 100px
+		&__image
+			&--third
+				img
+					margin-top: 0
+			&--last
+				margin-top: 30px
+				.image-number
+					top: 20%
+
+	.title
+		font-size: 45px
+
+	.provide
+		&__title
+			font-size: 18px
+		&__text
+			font-size: 18px
+
+	.teacher-card
+		padding-bottom: 30px
+		&__title
+			font-size: 18px
+		&__text
+			font-size: 14px
+
+	.title--price
+		&::before
+			right: 0
+
+	.price-head
+		&__title
+			font-size: 45px
+		&__text
+			font-size: 18px
+
+	.price
+		&::before
+			width: 44vw
+			height: 65vw
+			background-position: 50% 50%
+		&__title
+			font-size: 16px
+		&__text
+			font-size: 16px
+
+	.practice
+		&__title
+			font-size: 18px
+		&__text
+			font-size: 18px
+
+	.title--practice
+		font-size: 45px
+
+	.slide
+		&__content
+			padding-left: 65px
+			text-align: left
+
+	.footer-line
+		padding-left: 15px
+		padding-right: 15px
+		.logo
+			font-size: 48px
+		.logo__text
+			font-size: 18px
+		&__wrap-icons
+			margin-top: 30px
+		.main-nav__item
+			display: inline-block
