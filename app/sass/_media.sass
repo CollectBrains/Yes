@@ -54,7 +54,7 @@
 	.hero-text
 		text-align: center
 		margin-left: 0
-		padding-top: 60vw
+		padding-top: 20vh
 		&__title
 			font-size: 24px
 			&::after
@@ -67,6 +67,27 @@
 
 	.situation
 		text-align: center
+		.row
+			float: none
+			display: flex
+			flex-direction: column
+			.flex-order
+				&:nth-of-type(1)
+					order: 1
+				&:nth-of-type(2)
+					order: 1
+				&:nth-of-type(3)
+					order: 3
+				&:nth-of-type(4)
+					order: 2
+				&:nth-of-type(5)
+					order: 4
+				&:nth-of-type(6)
+					order: 5
+				&:nth-of-type(7)
+					order: 6
+				&:nth-of-type(8)
+					order: 7
 		&__image
 			&--last
 				.image-number
@@ -132,6 +153,18 @@
 			padding-left: 0
 		&__text
 			padding-left: 0
+
+	.practice__wrap
+		display: flex
+		flex-direction: column
+		margin-bottom: 0
+		&--second
+			div:first-child
+				order: 2
+		&--forth
+			div:first-child
+				order: 2
+
 
 	.title--practice
 		font-size: 30px
@@ -232,6 +265,10 @@
 
 	.situation
 		text-align: left
+		.row
+			display: block
+			flex: none
+			float: left
 		&__text
 			font-size: 18px
 			padding-bottom: 100px
@@ -313,6 +350,10 @@
 		&__text
 			font-size: 16px
 			padding-left: 37px
+
+	.practice__wrap
+		display: block
+		margin-bottom: 75px
 
 	.title--practice
 		font-size: 30px
